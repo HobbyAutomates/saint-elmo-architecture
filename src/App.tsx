@@ -9,34 +9,36 @@ const HOUSE_IMG =
 const BG_IMG =
   "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260603_073200_7082add5-f1f8-4873-8696-d6f78a44089b.png&w=1920&q=85";
 
+const SQ = "https://images.squarespace-cdn.com/content/v1/5835f2782e69cfabd96f1c20";
+
 const GALLERY_IMAGES = [
-  { src: "/projects/exterior-dusk.jpg", label: "Exterior — Dusk" },
-  { src: "/projects/passive-house.jpg", label: "Passive House — Wood Clad" },
-  { src: "/projects/interior-living.jpg", label: "Interior — Living Room" },
-  { src: "/projects/modern-exterior.jpg", label: "Modern Exterior" },
-  { src: "/projects/kitchen.jpg", label: "Kitchen — Sustainable Design" },
-  { src: "/projects/interior-warm.jpg", label: "Interior — Warm Tones" },
-  { src: "/projects/interior-cream.jpg", label: "Interior — Cream Living" },
+  { src: `${SQ}/c7055e1a-fc2f-4331-a325-bb8b8aeb8860/Lareina+Drive-030-Edit-+Kieran+Reeves+Photography+%5BWeb-Res%5D.jpg?format=1500w`, label: "Lareina Guesthouse — Austin, TX" },
+  { src: `${SQ}/1692844244413-AKSHAMJPP0WJQZSDZCJZ/DSC05421.JPG?format=1500w`, label: "Ancram Art Studio — New York" },
+  { src: `${SQ}/31b01cf4-467b-4378-ac50-473bd6d3e979/1914+East+Side+Dr+EDIT-009-+Kieran+Reeves+Photography+%5BHigh-Res%5D.jpg?format=1500w`, label: "Travis Heights — Austin, TX" },
+  { src: `${SQ}/b896c603-b13a-4cde-833e-5065e77f4272/3f902990-0cb7-4521-b188-d7e16d89faad.jpg?format=1500w`, label: "Jordan Ln Renovation — Austin" },
+  { src: `${SQ}/6bec35f6-6878-4efa-b0a0-b353530ad745/IMG_1466.jpg?format=1500w`, label: "Hyde Park Historic Home" },
+  { src: `${SQ}/fcda6e1d-2d84-40c6-8456-f009693602f2/1804Berkeley_01JUL23_REVISED.jpg?format=1500w`, label: "Berkley Renovation + Addition" },
+  { src: `${SQ}/748900a9-917a-4ffd-9846-8621573f8544/PeytonArtStudio_reduced.jpg?format=1500w`, label: "Peyton Art Studio Addition" },
 ];
 
 const PROJECTS = [
+  {
+    name: "Ancram Net-Zero Art Studio",
+    location: "Ancram, NY",
+    status: "Completed 2019",
+    size: "1,750 SF",
+    tags: ["Net-Zero", "PHI Certified", "New Build"],
+    description: "A net-zero art studio built to Passive House Institute standards. Built by GreenCore Builders with energy consulting by bldgtyp, Brooklyn. A study in performance and craft.",
+    img: `${SQ}/1692844244413-AKSHAMJPP0WJQZSDZCJZ/DSC05421.JPG?format=1500w`,
+  },
   {
     name: "Lareina Energy Efficient Guesthouse",
     location: "Austin, TX",
     status: "Under Construction",
     size: "1,100 SF",
-    tags: ["PHIUS Core", "AEGB Target", "New Build"],
-    description: "Energy-efficient guesthouse pursuing PHIUS Core and AEGB certification. MEP by Positive Energy. Passive House principles at intimate residential scale.",
-    img: "/projects/passive-house.jpg",
-  },
-  {
-    name: "Hyde Park Historic Home",
-    location: "Austin, TX",
-    status: "Under Construction",
-    size: "Renovation",
-    tags: ["Historic", "Energy Retrofit", "Residential"],
-    description: "Sensitive renovation of a historic Hyde Park residence, marrying preservation with contemporary energy performance and sustainable materials.",
-    img: "/projects/modern-exterior.jpg",
+    tags: ["PHIUS Core", "AEGB", "New Build"],
+    description: "Energy-efficient guesthouse pursuing PHIUS Core and AEGB certification. Structural by FORT Structures, MEP by Positive Energy. Passive House principles at residential scale.",
+    img: `${SQ}/c7055e1a-fc2f-4331-a325-bb8b8aeb8860/Lareina+Drive-030-Edit-+Kieran+Reeves+Photography+%5BWeb-Res%5D.jpg?format=1500w`,
   },
   {
     name: "Travis Heights Addition",
@@ -44,8 +46,8 @@ const PROJECTS = [
     status: "Under Construction",
     size: "Addition",
     tags: ["Residential", "Addition", "Site-Specific"],
-    description: "A carefully considered addition to a Travis Heights home. Designed to respond to the existing structure, neighborhood context, and Austin's climate.",
-    img: "/projects/exterior-dusk.jpg",
+    description: "A carefully considered addition to a Travis Heights home. Designed to respond to the existing structure, neighborhood context, and Austin's subtropical climate.",
+    img: `${SQ}/31b01cf4-467b-4378-ac50-473bd6d3e979/1914+East+Side+Dr+EDIT-009-+Kieran+Reeves+Photography+%5BHigh-Res%5D.jpg?format=1500w`,
   },
 ];
 
